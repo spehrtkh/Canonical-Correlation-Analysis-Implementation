@@ -13,14 +13,35 @@ This repository contains MATLAB code for performing Steady-State Visual Evoked P
 SSVEP is an oscillatory brain response elicited by visual stimuli flickering at specific frequencies. This project aims to recognize the frequency of the stimulus by analyzing EEG data using CCA. The code evaluates the accuracy of frequency recognition across multiple subjects and runs, providing a comprehensive analysis of SSVEP-based brain-computer interface (BCI) systems.
 
 ## Installation
-To use this project, you need to have MATLAB installed on your system. Additionally, make sure you have the necessary EEG data files and the `freq_phase.mat` file, which contains the stimulus frequencies and phases.
+To use this project, you need to have MATLAB installed on your system. Additionally, you will need the following files:
+- EEG data files for each subject, named in the format `s<subject_number>.mat` (e.g., `s1.mat`, `s2.mat`, etc.).
+- The `freq_phase.mat` file, which contains the stimulus frequencies and phases.
 
-1. Clone the repository:
+### Steps
+1. Download or clone the repository:
    ```bash
-   git clone https://github.com/spehrtkh/myCCA
-2. Navigate to the project directory:
-   ```bash
-   cd SSVEP-CCA-Analysis
+   git clone https://github.com/yourusername/SSVEP-CCA-Analysis.git
+   ```
+
+2. Place all EEG data files and the `freq_phase.mat` file in the `SSVEP-CCA-Analysis` directory:
+   - The directory should look like this:
+     ```
+     SSVEP-CCA-Analysis/
+     ├── SSVEP_CCA_Analysis.m
+     ├── generate_reference_signals.m
+     ├── concatenate_runs.m
+     ├── apply_car_filter.m
+     ├── myCCA.m
+     ├── compute_accuracy.m
+     ├── s1.mat
+     ├── s2.mat
+     ├── ... (other subject files)
+     └── freq_phase.mat
+     ```
+
+3. Open MATLAB and set the current directory to the `SSVEP-CCA-Analysis` directory:
+   ```matlab
+   cd 'path_to_SSVEP-CCA-Analysis'
    ```
 
 ## Usage
