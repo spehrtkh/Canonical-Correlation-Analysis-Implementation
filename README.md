@@ -65,8 +65,4 @@ To use this project, you need to have MATLAB installed on your system. Additiona
   
 - **compute_accuracy.m**: Computes the accuracy of the SSVEP frequency recognition by comparing the recognized frequencies with the true frequencies.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
-This README provides a structured overview of the project, including instructions for setting it up and running the analysis, along with a brief explanation of each function included in the code. Adjust the content according to your specific details, such as repository links or license terms.
